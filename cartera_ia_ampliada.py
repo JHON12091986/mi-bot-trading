@@ -24,16 +24,46 @@ REGLAS_AUTO = {
     "META": {
         "compra_rsi_min": 25,
         "venta_rsi_max": 75,
-        "cantidad_max_compra": 5000,
-        "cantidad_min_venta": 0.5
+        "cantidad_max_compra": 3000,     # Bajado de 5000 a 3000
+        "cantidad_min_venta": 0.5,
+        "compras_dia_max": 1
     },
     "BTC": {
-        "compra_rsi_min": 30,
-        "venta_rsi_max": 70,
-        "cantidad_max_compra": 10000,
-        "cantidad_min_venta": 0.3
+        "compra_rsi_min": 28,            # Bajado de 30 a 28 (más estricto)
+        "venta_rsi_max": 72,             # Subido de 70 a 72 (deja correr más)
+        "cantidad_max_compra": 5000,     # Bajado de 10000 a 5000
+        "cantidad_min_venta": 0.3,
+        "compras_dia_max": 1
     }
 }
+
+# Archivo para control de compras diarias
+ARCHIVO_COMPRAS = "compras_hoy.json"
+
+def verificar_limite_compras(activo):
+    """Verifica si ya se compró hoy este activo"""
+    hoy = datetime.now().strftime("%Y-%m-%d")
+    if os.path.exists(ARCHIVO_COMPRAS):
+        with open(ARCHIVO_COMPRAS, "r") as f:
+            data = json.load(f)
+        if data.get("fecha") == hoy:
+            compras_hoy = data.get("compras", {}).get(activo, 0)
+            limite = REGLAS_AUTO.get(activo, {}).get("compras_dia_max", 2)
+            return compras_hoy < limite
+    return True
+
+def registrar_compra(activo):
+    """Registra una compra para controlar límite diario"""
+    hoy = datetime.now().strftime("%Y-%m-%d")
+    data = {"fecha": hoy, "compras": {}}
+    if os.path.exists(ARCHIVO_COMPRAS):
+        with open(ARCHIVO_COMPRAS, "r") as f:
+            data = json.load(f)
+        if data.get("fecha") != hoy:
+            data = {"fecha": hoy, "compras": {}}
+    data["compras"][activo] = data["compras"].get(activo, 0) + 1
+    with open(ARCHIVO_COMPRAS, "w") as f:
+        json.dump(data, f, indent=4)
 
 # ========== TU PORTAFOLIO REAL (se actualiza automáticamente) ==========
 PORTAFOLIO_REAL = {
@@ -181,6 +211,8 @@ def ejecutar_orden_automatica(activo, accion, precio, rsi, cantidad):
         if activo in PORTAFOLIO_REAL:
             PORTAFOLIO_REAL[activo]["cantidad"] += cantidad
             PORTAFOLIO_REAL[activo]["valor"] += precio * cantidad
+        # Registrar la compra para control de límite diario
+        registrar_compra(activo)
     elif accion == "VENTA":
         EFECTIVO_DISPONIBLE += precio * cantidad
         if activo in PORTAFOLIO_REAL:
@@ -230,9 +262,13 @@ for ticker, nombre in CARTERA.items():
             enviar_telegram(mensaje)
             guardar_simulacion(ticker, "COMPRA", precio, rsi)
             oportunidades.append(f"{ticker} (COMPRA RSI:{rsi:.0f})")
+            # Verificar límites antes de comprar automáticamente
             if AUTO_COMPRAR and ticker in REGLAS_AUTO and rsi <= REGLAS_AUTO[ticker]["compra_rsi_min"]:
-                cantidad = REGLAS_AUTO[ticker]["cantidad_max_compra"] / precio
-                ejecutar_orden_automatica(ticker, "COMPRA", precio, rsi, cantidad)
+                if verificar_limite_compras(ticker):
+                    cantidad = REGLAS_AUTO[ticker]["cantidad_max_compra"] / precio
+                    ejecutar_orden_automatica(ticker, "COMPRA", precio, rsi, cantidad)
+                else:
+                    print(f"   ⏸️ Límite diario alcanzado para {ticker}, no se compra")
         elif rsi > 70:
             decision = "🟢 VENDER"
             mensaje = f"🟢 VENTA {ticker} - {nombre}\n💰 ${precio:.2f} | RSI: {rsi:.1f}"
@@ -267,8 +303,11 @@ try:
                 ejecutar_orden_automatica("BTC", "VENTA", precio_btc, rsi_btc, cantidad)
     elif rsi_btc < 30:
         if AUTO_COMPRAR and "BTC" in REGLAS_AUTO and rsi_btc <= REGLAS_AUTO["BTC"]["compra_rsi_min"]:
-            cantidad = REGLAS_AUTO["BTC"]["cantidad_max_compra"] / precio_btc
-            ejecutar_orden_automatica("BTC", "COMPRA", precio_btc, rsi_btc, cantidad)
+            if verificar_limite_compras("BTC"):
+                cantidad = REGLAS_AUTO["BTC"]["cantidad_max_compra"] / precio_btc
+                ejecutar_orden_automatica("BTC", "COMPRA", precio_btc, rsi_btc, cantidad)
+            else:
+                print(f"   ⏸️ Límite diario alcanzado para BTC, no se compra")
     print(f"🟡 BTC - Bitcoin")
     print(f"     💰 ${precio_btc:.2f} | RSI: {rsi_btc:.1f}")
     guardar_saldo_actual("BTC-USD", precio_btc, rsi_btc)

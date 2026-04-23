@@ -389,6 +389,192 @@
       "precio": 202.5,
       "rsi": 83.8,
       "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 08:31:53",
+      "precio": 201.7,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:38",
+      "precio": 201.54,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:06",
+      "precio": 203.24,
+      "rsi": 80.1,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 08:47:52",
+      "precio": 203.47,
+      "rsi": 81.6,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:02:25",
+      "precio": 202.35,
+      "rsi": 28.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:18",
+      "precio": 202.65,
+      "rsi": 28.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:47",
+      "precio": 202.7,
+      "rsi": 45.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:44",
+      "precio": 202.55,
+      "rsi": 40.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:32:58",
+      "precio": 202.11,
+      "rsi": 40.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:58",
+      "precio": 202.24,
+      "rsi": 52.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:17",
+      "precio": 202.26,
+      "rsi": 56.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:21",
+      "precio": 202.11,
+      "rsi": 48.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:04:43",
+      "precio": 202.97,
+      "rsi": 82.4,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:18:29",
+      "precio": 202.93,
+      "rsi": 50.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:18",
+      "precio": 203.03,
+      "rsi": 57.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:47",
+      "precio": 202.59,
+      "rsi": 35.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:47",
+      "precio": 202.35,
+      "rsi": 30.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:04",
+      "precio": 201.72,
+      "rsi": 18.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:18",
+      "precio": 201.46,
+      "rsi": 13.8,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:21",
+      "precio": 201.26,
+      "rsi": 42.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:36",
+      "precio": 201.19,
+      "rsi": 42.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:37",
+      "precio": 201.16,
+      "rsi": 51.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:21:49",
+      "precio": 201.01,
+      "rsi": 41.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:05",
+      "precio": 201.6,
+      "rsi": 71.8,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:37:06",
+      "precio": 201.66,
+      "rsi": 78.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:50:20",
+      "precio": 201.56,
+      "rsi": 44.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:31",
+      "precio": 201.75,
+      "rsi": 57.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:34",
+      "precio": 200.72,
+      "rsi": 14.6,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:07:44",
+      "precio": 200.72,
+      "rsi": 12.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:06",
+      "precio": 199.41,
+      "rsi": 19.7,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:29",
+      "precio": 199.69,
+      "rsi": 37.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "AVGO": [
@@ -780,6 +966,192 @@
       "fecha": "2026-04-23 08:17:30",
       "precio": 422.65,
       "rsi": 69.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:54",
+      "precio": 419.84,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:39",
+      "precio": 420.38,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:11",
+      "precio": 426.66,
+      "rsi": 71.9,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 08:48:00",
+      "precio": 427.01,
+      "rsi": 72.9,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:02:25",
+      "precio": 425.55,
+      "rsi": 32.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:19",
+      "precio": 425.66,
+      "rsi": 33.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:48",
+      "precio": 427.07,
+      "rsi": 62.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:45",
+      "precio": 426.93,
+      "rsi": 60.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:32:59",
+      "precio": 425.56,
+      "rsi": 33.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:59",
+      "precio": 425.25,
+      "rsi": 35.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:19",
+      "precio": 425.82,
+      "rsi": 51.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:22",
+      "precio": 425.85,
+      "rsi": 46.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:04:49",
+      "precio": 427.23,
+      "rsi": 70.0,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:18:30",
+      "precio": 428.47,
+      "rsi": 63.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:19",
+      "precio": 428.52,
+      "rsi": 69.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:48",
+      "precio": 428.64,
+      "rsi": 50.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:49",
+      "precio": 428.89,
+      "rsi": 49.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:05",
+      "precio": 428.5,
+      "rsi": 44.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:19",
+      "precio": 427.82,
+      "rsi": 39.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:22",
+      "precio": 426.89,
+      "rsi": 37.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:37",
+      "precio": 426.91,
+      "rsi": 42.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:42",
+      "precio": 428.43,
+      "rsi": 74.3,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:21:50",
+      "precio": 428.28,
+      "rsi": 62.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:09",
+      "precio": 427.07,
+      "rsi": 28.8,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:11",
+      "precio": 427.31,
+      "rsi": 22.5,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:20",
+      "precio": 426.73,
+      "rsi": 37.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:32",
+      "precio": 427.13,
+      "rsi": 51.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:39",
+      "precio": 424.25,
+      "rsi": 20.6,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:07:50",
+      "precio": 424.89,
+      "rsi": 25.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:07",
+      "precio": 422.31,
+      "rsi": 25.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:30",
+      "precio": 422.27,
+      "rsi": 34.8,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -1173,6 +1545,186 @@
       "precio": 487.48,
       "rsi": 46.7,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:55",
+      "precio": 480.67,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:40",
+      "precio": 482.24,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:11",
+      "precio": 476.2,
+      "rsi": 38.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:01",
+      "precio": 477.71,
+      "rsi": 45.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:26",
+      "precio": 476.56,
+      "rsi": 45.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:20",
+      "precio": 478.35,
+      "rsi": 53.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:49",
+      "precio": 474.69,
+      "rsi": 36.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:46",
+      "precio": 473.43,
+      "rsi": 34.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:04",
+      "precio": 480.83,
+      "rsi": 86.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:34:07",
+      "precio": 480.57,
+      "rsi": 87.1,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:48:19",
+      "precio": 479.73,
+      "rsi": 41.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:23",
+      "precio": 479.7,
+      "rsi": 41.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:30",
+      "precio": 484.73,
+      "rsi": 68.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:24",
+      "precio": 485.52,
+      "rsi": 71.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:33:49",
+      "precio": 486.96,
+      "rsi": 57.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:50",
+      "precio": 486.43,
+      "rsi": 57.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:06",
+      "precio": 487.67,
+      "rsi": 61.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:20",
+      "precio": 487.49,
+      "rsi": 55.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:22",
+      "precio": 486.75,
+      "rsi": 47.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:38",
+      "precio": 485.89,
+      "rsi": 41.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:47",
+      "precio": 488.88,
+      "rsi": 70.7,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:21:50",
+      "precio": 488.23,
+      "rsi": 60.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:10",
+      "precio": 491.69,
+      "rsi": 77.0,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:37:16",
+      "precio": 491.75,
+      "rsi": 75.9,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:50:21",
+      "precio": 492.24,
+      "rsi": 57.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:33",
+      "precio": 492.78,
+      "rsi": 51.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:43",
+      "precio": 485.81,
+      "rsi": 5.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:07:56",
+      "precio": 486.2,
+      "rsi": 14.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:08",
+      "precio": 483.05,
+      "rsi": 32.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:31",
+      "precio": 481.88,
+      "rsi": 42.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "ANET": [
@@ -1564,6 +2116,192 @@
       "fecha": "2026-04-23 08:17:32",
       "precio": 177.73,
       "rsi": 59.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:57",
+      "precio": 175.91,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:41",
+      "precio": 175.75,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:12",
+      "precio": 177.21,
+      "rsi": 66.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:02",
+      "precio": 177.44,
+      "rsi": 69.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:30",
+      "precio": 175.31,
+      "rsi": 23.7,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:25",
+      "precio": 175.23,
+      "rsi": 26.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:49",
+      "precio": 175.38,
+      "rsi": 44.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:47",
+      "precio": 174.85,
+      "rsi": 38.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:04",
+      "precio": 174.52,
+      "rsi": 44.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:34:08",
+      "precio": 174.38,
+      "rsi": 38.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:20",
+      "precio": 175.18,
+      "rsi": 63.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:24",
+      "precio": 175.09,
+      "rsi": 58.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:01",
+      "precio": 175.41,
+      "rsi": 56.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:31",
+      "precio": 175.65,
+      "rsi": 62.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:25",
+      "precio": 175.62,
+      "rsi": 66.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:50",
+      "precio": 175.72,
+      "rsi": 53.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:50",
+      "precio": 175.59,
+      "rsi": 54.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:06",
+      "precio": 175.74,
+      "rsi": 52.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:21",
+      "precio": 175.17,
+      "rsi": 50.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:27",
+      "precio": 174.13,
+      "rsi": 21.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:39",
+      "precio": 174.63,
+      "rsi": 38.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:51",
+      "precio": 174.91,
+      "rsi": 71.1,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:21:51",
+      "precio": 175.03,
+      "rsi": 64.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:11",
+      "precio": 175.09,
+      "rsi": 51.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:17",
+      "precio": 175.06,
+      "rsi": 54.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:22",
+      "precio": 174.78,
+      "rsi": 42.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:34",
+      "precio": 174.91,
+      "rsi": 51.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:49",
+      "precio": 173.16,
+      "rsi": 13.6,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:01",
+      "precio": 173.33,
+      "rsi": 15.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:08",
+      "precio": 172.05,
+      "rsi": 29.1,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:32",
+      "precio": 171.81,
+      "rsi": 35.8,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -1957,6 +2695,192 @@
       "precio": 157.32,
       "rsi": 46.0,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:57",
+      "precio": 160.68,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:42",
+      "precio": 160.26,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:13",
+      "precio": 162.93,
+      "rsi": 60.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:03",
+      "precio": 163.25,
+      "rsi": 59.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:31",
+      "precio": 162.16,
+      "rsi": 44.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:26",
+      "precio": 162.01,
+      "rsi": 37.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:50",
+      "precio": 161.89,
+      "rsi": 48.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:48",
+      "precio": 161.62,
+      "rsi": 40.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:09",
+      "precio": 162.6,
+      "rsi": 70.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:34:09",
+      "precio": 162.52,
+      "rsi": 67.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:21",
+      "precio": 163.62,
+      "rsi": 68.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:26",
+      "precio": 163.43,
+      "rsi": 63.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:02",
+      "precio": 163.78,
+      "rsi": 50.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:31",
+      "precio": 164.49,
+      "rsi": 65.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:30",
+      "precio": 164.93,
+      "rsi": 71.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:33:55",
+      "precio": 166.19,
+      "rsi": 74.7,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:35:52",
+      "precio": 165.78,
+      "rsi": 63.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:07",
+      "precio": 165.48,
+      "rsi": 44.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:22",
+      "precio": 164.76,
+      "rsi": 31.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:28",
+      "precio": 165.38,
+      "rsi": 61.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:40",
+      "precio": 165.19,
+      "rsi": 49.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:56",
+      "precio": 166.51,
+      "rsi": 84.6,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:21:57",
+      "precio": 166.53,
+      "rsi": 77.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:35:12",
+      "precio": 167.33,
+      "rsi": 66.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:18",
+      "precio": 167.49,
+      "rsi": 74.1,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:50:22",
+      "precio": 167.13,
+      "rsi": 40.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:35",
+      "precio": 167.79,
+      "rsi": 59.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:54",
+      "precio": 166.22,
+      "rsi": 28.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:06",
+      "precio": 166.14,
+      "rsi": 28.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:09",
+      "precio": 164.34,
+      "rsi": 25.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:33",
+      "precio": 164.04,
+      "rsi": 31.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "MSFT": [
@@ -2229,6 +3153,192 @@
       "precio": 432.92,
       "rsi": 63.5,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:58",
+      "precio": 421.39,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:43",
+      "precio": 421.67,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:13",
+      "precio": 420.44,
+      "rsi": 45.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:04",
+      "precio": 421.09,
+      "rsi": 44.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:36",
+      "precio": 417.33,
+      "rsi": 21.1,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:31",
+      "precio": 417.01,
+      "rsi": 20.8,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:50",
+      "precio": 417.95,
+      "rsi": 58.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:49",
+      "precio": 417.47,
+      "rsi": 56.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:10",
+      "precio": 418.43,
+      "rsi": 62.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:34:11",
+      "precio": 418.93,
+      "rsi": 64.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:25",
+      "precio": 420.74,
+      "rsi": 77.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:49:30",
+      "precio": 420.61,
+      "rsi": 73.1,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:05:03",
+      "precio": 421.22,
+      "rsi": 59.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:32",
+      "precio": 422.01,
+      "rsi": 63.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:31",
+      "precio": 421.99,
+      "rsi": 60.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:56",
+      "precio": 422.65,
+      "rsi": 59.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:53",
+      "precio": 421.92,
+      "rsi": 44.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:12",
+      "precio": 420.44,
+      "rsi": 9.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:28",
+      "precio": 419.81,
+      "rsi": 14.5,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:29",
+      "precio": 418.8,
+      "rsi": 36.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:40",
+      "precio": 418.99,
+      "rsi": 39.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:57",
+      "precio": 418.62,
+      "rsi": 45.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:21:58",
+      "precio": 418.35,
+      "rsi": 43.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:12",
+      "precio": 417.5,
+      "rsi": 34.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:23",
+      "precio": 417.39,
+      "rsi": 21.6,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:23",
+      "precio": 417.05,
+      "rsi": 40.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:35",
+      "precio": 417.37,
+      "rsi": 58.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:55",
+      "precio": 416.13,
+      "rsi": 34.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:11",
+      "precio": 415.95,
+      "rsi": 26.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:14",
+      "precio": 414.85,
+      "rsi": 25.6,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:33",
+      "precio": 414.89,
+      "rsi": 29.6,
+      "decision": "\ud83d\udd34 COMPRAR"
     }
   ],
   "AMZN": [
@@ -2500,6 +3610,192 @@
       "fecha": "2026-04-23 08:17:35",
       "precio": 255.36,
       "rsi": 52.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:59",
+      "precio": 254.08,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:44",
+      "precio": 254.43,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:14",
+      "precio": 255.29,
+      "rsi": 58.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:05",
+      "precio": 255.49,
+      "rsi": 57.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:37",
+      "precio": 255.47,
+      "rsi": 51.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:32",
+      "precio": 255.61,
+      "rsi": 55.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:51",
+      "precio": 255.08,
+      "rsi": 38.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:50",
+      "precio": 255.03,
+      "rsi": 44.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:14",
+      "precio": 256.17,
+      "rsi": 79.4,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:34:17",
+      "precio": 256.65,
+      "rsi": 94.3,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:48:26",
+      "precio": 256.97,
+      "rsi": 57.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:31",
+      "precio": 256.93,
+      "rsi": 51.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:09",
+      "precio": 257.98,
+      "rsi": 76.3,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:18:33",
+      "precio": 258.36,
+      "rsi": 60.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:32",
+      "precio": 257.88,
+      "rsi": 44.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:57",
+      "precio": 257.5,
+      "rsi": 30.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:35:59",
+      "precio": 257.47,
+      "rsi": 27.1,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:13",
+      "precio": 257.19,
+      "rsi": 42.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:28",
+      "precio": 256.7,
+      "rsi": 28.8,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:30",
+      "precio": 256.74,
+      "rsi": 52.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:41",
+      "precio": 256.74,
+      "rsi": 53.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:58",
+      "precio": 256.58,
+      "rsi": 34.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:21:58",
+      "precio": 256.62,
+      "rsi": 37.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:17",
+      "precio": 257.19,
+      "rsi": 76.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 11:37:24",
+      "precio": 257.04,
+      "rsi": 64.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:24",
+      "precio": 256.92,
+      "rsi": 38.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:36",
+      "precio": 256.83,
+      "rsi": 43.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:05:55",
+      "precio": 256.1,
+      "rsi": 31.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:12",
+      "precio": 255.99,
+      "rsi": 36.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:18",
+      "precio": 255.29,
+      "rsi": 26.1,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:34",
+      "precio": 255.24,
+      "rsi": 33.6,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -2773,6 +4069,192 @@
       "precio": 921.48,
       "rsi": 69.1,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:31:59",
+      "precio": 926.89,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:45",
+      "precio": 928.55,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:15",
+      "precio": 923.58,
+      "rsi": 34.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:06",
+      "precio": 923.53,
+      "rsi": 35.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:41",
+      "precio": 922.4,
+      "rsi": 29.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:37",
+      "precio": 921.79,
+      "rsi": 28.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:51",
+      "precio": 923.21,
+      "rsi": 62.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:51",
+      "precio": 922.59,
+      "rsi": 49.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:15",
+      "precio": 921.17,
+      "rsi": 40.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:34:18",
+      "precio": 920.88,
+      "rsi": 36.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:27",
+      "precio": 921.82,
+      "rsi": 56.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:32",
+      "precio": 921.58,
+      "rsi": 51.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:10",
+      "precio": 919.06,
+      "rsi": 37.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:33",
+      "precio": 919.16,
+      "rsi": 52.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:32",
+      "precio": 919.32,
+      "rsi": 51.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:33:58",
+      "precio": 919.19,
+      "rsi": 51.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:36:04",
+      "precio": 918.92,
+      "rsi": 36.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:15",
+      "precio": 920.72,
+      "rsi": 69.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:29",
+      "precio": 921.02,
+      "rsi": 63.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:34",
+      "precio": 919.33,
+      "rsi": 28.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:46",
+      "precio": 918.62,
+      "rsi": 25.0,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:58",
+      "precio": 916.46,
+      "rsi": 28.0,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:21:59",
+      "precio": 915.92,
+      "rsi": 22.7,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:18",
+      "precio": 915.54,
+      "rsi": 45.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:25",
+      "precio": 915.61,
+      "rsi": 56.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:24",
+      "precio": 915.56,
+      "rsi": 53.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:37",
+      "precio": 915.64,
+      "rsi": 64.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:06:00",
+      "precio": 913.42,
+      "rsi": 25.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:17",
+      "precio": 913.63,
+      "rsi": 28.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:19",
+      "precio": 913.09,
+      "rsi": 37.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:35",
+      "precio": 913.04,
+      "rsi": 39.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "V": [
@@ -3045,6 +4527,192 @@
       "precio": 311.29,
       "rsi": 74.5,
       "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 08:32:00",
+      "precio": 310.45,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:46",
+      "precio": 310.66,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:19",
+      "precio": 307.59,
+      "rsi": 26.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:12",
+      "precio": 307.26,
+      "rsi": 24.9,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:42",
+      "precio": 307.38,
+      "rsi": 45.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:38",
+      "precio": 307.03,
+      "rsi": 47.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:52",
+      "precio": 307.5,
+      "rsi": 63.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:18:56",
+      "precio": 307.41,
+      "rsi": 74.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:33:16",
+      "precio": 307.85,
+      "rsi": 57.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:34:19",
+      "precio": 307.74,
+      "rsi": 43.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:27",
+      "precio": 307.45,
+      "rsi": 43.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:33",
+      "precio": 307.18,
+      "rsi": 42.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:11",
+      "precio": 306.39,
+      "rsi": 36.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:18:38",
+      "precio": 307.48,
+      "rsi": 74.8,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:20:37",
+      "precio": 307.22,
+      "rsi": 77.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:33:58",
+      "precio": 306.86,
+      "rsi": 34.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:36:05",
+      "precio": 306.81,
+      "rsi": 40.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:20",
+      "precio": 305.98,
+      "rsi": 24.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:30",
+      "precio": 306.36,
+      "rsi": 41.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:35",
+      "precio": 306.46,
+      "rsi": 60.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:47",
+      "precio": 306.65,
+      "rsi": 57.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:19:59",
+      "precio": 307.19,
+      "rsi": 67.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:22:01",
+      "precio": 307.1,
+      "rsi": 68.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:18",
+      "precio": 307.16,
+      "rsi": 52.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:26",
+      "precio": 306.98,
+      "rsi": 47.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:25",
+      "precio": 306.74,
+      "rsi": 37.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:38",
+      "precio": 306.84,
+      "rsi": 52.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:06:01",
+      "precio": 306.25,
+      "rsi": 40.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:22",
+      "precio": 306.2,
+      "rsi": 28.5,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:24",
+      "precio": 305.62,
+      "rsi": 27.4,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:36",
+      "precio": 305.63,
+      "rsi": 39.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "META": [
@@ -3316,6 +4984,192 @@
       "fecha": "2026-04-23 08:17:37",
       "precio": 674.72,
       "rsi": 24.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:00",
+      "precio": 660.8,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:32:47",
+      "precio": 660.46,
+      "rsi": 50,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:47:20",
+      "precio": 664.0,
+      "rsi": 65.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 08:48:12",
+      "precio": 664.29,
+      "rsi": 57.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:02:47",
+      "precio": 659.94,
+      "rsi": 19.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:03:43",
+      "precio": 660.62,
+      "rsi": 26.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 09:17:57",
+      "precio": 663.95,
+      "rsi": 77.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 09:18:57",
+      "precio": 663.1,
+      "rsi": 66.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:33:16",
+      "precio": 663.78,
+      "rsi": 64.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:34:20",
+      "precio": 663.76,
+      "rsi": 62.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:48:28",
+      "precio": 663.86,
+      "rsi": 53.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 09:49:34",
+      "precio": 663.52,
+      "rsi": 43.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:05:17",
+      "precio": 666.68,
+      "rsi": 78.5,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:18:39",
+      "precio": 668.54,
+      "rsi": 67.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:20:38",
+      "precio": 668.9,
+      "rsi": 77.2,
+      "decision": "\ud83d\udfe2 VENDER"
+    },
+    {
+      "fecha": "2026-04-23 10:33:59",
+      "precio": 668.48,
+      "rsi": 40.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:36:06",
+      "precio": 668.04,
+      "rsi": 43.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:49:20",
+      "precio": 666.87,
+      "rsi": 34.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 10:51:35",
+      "precio": 666.26,
+      "rsi": 27.3,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 11:04:36",
+      "precio": 665.3,
+      "rsi": 35.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:06:48",
+      "precio": 665.2,
+      "rsi": 40.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:20:00",
+      "precio": 665.53,
+      "rsi": 56.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:22:01",
+      "precio": 665.18,
+      "rsi": 51.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:35:19",
+      "precio": 665.73,
+      "rsi": 57.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:37:27",
+      "precio": 665.51,
+      "rsi": 53.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:50:25",
+      "precio": 665.33,
+      "rsi": 43.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 11:52:39",
+      "precio": 665.9,
+      "rsi": 59.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:06:05",
+      "precio": 663.75,
+      "rsi": 26.1,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:08:28",
+      "precio": 663.26,
+      "rsi": 23.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:21:24",
+      "precio": 660.34,
+      "rsi": 14.2,
+      "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:23:37",
+      "precio": 659.88,
+      "rsi": 18.8,
       "decision": "\ud83d\udd34 COMPRAR"
     }
   ]
