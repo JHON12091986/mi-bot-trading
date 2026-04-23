@@ -575,6 +575,18 @@
       "precio": 199.69,
       "rsi": 37.2,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:25",
+      "precio": 199.91,
+      "rsi": 58.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:38",
+      "precio": 199.33,
+      "rsi": 45.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "AVGO": [
@@ -1153,6 +1165,18 @@
       "precio": 422.27,
       "rsi": 34.8,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:26",
+      "precio": 422.3,
+      "rsi": 56.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:39",
+      "precio": 421.08,
+      "rsi": 45.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "MU": [
@@ -1724,6 +1748,18 @@
       "fecha": "2026-04-23 12:23:31",
       "precio": 481.88,
       "rsi": 42.1,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:26",
+      "precio": 484.13,
+      "rsi": 69.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:40",
+      "precio": 481.99,
+      "rsi": 53.7,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -2303,6 +2339,18 @@
       "precio": 171.81,
       "rsi": 35.8,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:27",
+      "precio": 171.91,
+      "rsi": 53.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:41",
+      "precio": 171.47,
+      "rsi": 45.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "MRVL": [
@@ -2881,6 +2929,18 @@
       "precio": 164.04,
       "rsi": 31.7,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:28",
+      "precio": 165.07,
+      "rsi": 67.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:42",
+      "precio": 164.31,
+      "rsi": 56.8,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "MSFT": [
@@ -3339,6 +3399,18 @@
       "precio": 414.89,
       "rsi": 29.6,
       "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:28",
+      "precio": 414.89,
+      "rsi": 53.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:43",
+      "precio": 413.55,
+      "rsi": 30.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "AMZN": [
@@ -3796,6 +3868,18 @@
       "fecha": "2026-04-23 12:23:34",
       "precio": 255.24,
       "rsi": 33.6,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:29",
+      "precio": 255.11,
+      "rsi": 48.0,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:44",
+      "precio": 254.45,
+      "rsi": 36.4,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -4255,6 +4339,18 @@
       "precio": 913.04,
       "rsi": 39.8,
       "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:30",
+      "precio": 914.62,
+      "rsi": 68.3,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:45",
+      "precio": 913.69,
+      "rsi": 59.9,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
   "V": [
@@ -4712,6 +4808,18 @@
       "fecha": "2026-04-23 12:23:36",
       "precio": 305.63,
       "rsi": 39.2,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:30",
+      "precio": 306.04,
+      "rsi": 63.7,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:46",
+      "precio": 305.47,
+      "rsi": 48.3,
       "decision": "\ud83d\udfe1 ESPERAR"
     }
   ],
@@ -5171,6 +5279,18 @@
       "precio": 659.88,
       "rsi": 18.8,
       "decision": "\ud83d\udd34 COMPRAR"
+    },
+    {
+      "fecha": "2026-04-23 12:36:31",
+      "precio": 659.74,
+      "rsi": 51.5,
+      "decision": "\ud83d\udfe1 ESPERAR"
+    },
+    {
+      "fecha": "2026-04-23 12:38:47",
+      "precio": 657.6,
+      "rsi": 37.4,
+      "decision": "\ud83d\udfe1 ESPERAR"
     }
   ]
 }
