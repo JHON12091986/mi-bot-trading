@@ -1,0 +1,20 @@
+{
+    "fecha_actualizacion": "2026-04-23T07:08:40.949530",
+    "efectivo": 54911.0,
+    "portafolio": {
+        "BTC": {
+            "cantidad": 0.263796,
+            "precio_entrada": 75815.99,
+            "valor": 20488.85,
+            "valor_actual": 20537.447161919998,
+            "rsi_actual": 69.87490302560124
+        },
+        "META": {
+            "cantidad": 22.35240138487076,
+            "precio_entrada": 669.04702,
+            "valor": 14936.83,
+            "valor_actual": 15081.6122624,
+            "rsi_actual": 24.34626077138566
+        }
+    }
+}

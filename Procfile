@@ -1,0 +1,1 @@
+worker: python cartera_ia_ampliada.py

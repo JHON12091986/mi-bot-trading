@@ -1,0 +1,50 @@
+[
+    {
+        "fecha": "2026-04-22 15:06:26",
+        "activo": "NVDA",
+        "accion": "VENTA SIMULADA",
+        "precio": 202.5,
+        "rsi": 83.80508778215693,
+        "recomendacion": "\u26a0\ufe0f NVDA RSI 83.8 > 70 \u2192 Considera vender parte de tu posici\u00f3n ($10001)"
+    },
+    {
+        "fecha": "2026-04-22 15:12:06",
+        "activo": "NVDA",
+        "accion": "VENTA SIMULADA",
+        "precio": 202.5,
+        "rsi": 83.80508778215693,
+        "recomendacion": "\u26a0\ufe0f NVDA RSI 83.8 > 70 \u2192 Considera vender parte de tu posici\u00f3n ($10001)"
+    },
+    {
+        "fecha": "2026-04-22 18:51:33",
+        "activo": "NVDA",
+        "accion": "VENTA SIMULADA",
+        "precio": 202.5,
+        "rsi": 83.80508778215693,
+        "recomendacion": "\u26a0\ufe0f NVDA RSI 83.8 > 70 \u2192 Considera vender parte de tu posici\u00f3n ($10001)"
+    },
+    {
+        "fecha": "2026-04-23 06:37:08",
+        "activo": "NVDA",
+        "accion": "VENTA SIMULADA",
+        "precio": 202.5,
+        "rsi": 83.80508778215693,
+        "recomendacion": "\u26a0\ufe0f NVDA RSI 83.8 > 70 \u2192 Considera vender parte de tu posici\u00f3n ($10001)"
+    },
+    {
+        "fecha": "2026-04-23 06:56:12",
+        "activo": "NVDA",
+        "accion": "VENTA SIMULADA",
+        "precio": 202.5,
+        "rsi": 83.80508778215693,
+        "recomendacion": "\u26a0\ufe0f NVDA RSI 83.8 > 70 \u2192 Considera vender parte de tu posici\u00f3n ($10001)"
+    },
+    {
+        "fecha": "2026-04-23 06:56:24",
+        "activo": "BTC",
+        "accion": "VENTA SIMULADA",
+        "precio": 77753.69,
+        "rsi": 70.29469405530958,
+        "recomendacion": "\u26a0\ufe0f BTC RSI 70.3 > 70 \u2192 Considera vender parte (valor: $20814)"
+    }
+]

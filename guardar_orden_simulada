@@ -1,0 +1,4 @@
+# Guardar en Excel también
+cantidad_a_vender = PORTAFOLIO_REAL['NVDA']['cantidad'] * 0.6
+total_venta = cantidad_a_vender * precio
+guardar_en_excel(ticker, "VENTA", precio, rsi, cantidad_a_vender, total_venta)
