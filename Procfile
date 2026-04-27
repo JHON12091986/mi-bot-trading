@@ -1,1 +1,1 @@
-worker: python cartera_ia_ampliada.py
+worker: python bot_rapido.py
