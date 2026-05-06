@@ -1,105 +1,81 @@
-# cartera_ia_ampliada.py - Monitoreo con simulación, resumen y recomendaciones
+# cartera_ia_ampliada.py - Simulador avanzado con 10 activos (RSI) y Telegram
+# Modo: SOLO SIMULACIÓN. No afecta dinero real.
+# VERSIÓN MEJORADA - MÁS POTENTE Y PRECISA
 
-import requests
-import json
 import os
+import json
+import requests
+import random
+import time
 from datetime import datetime
+from dotenv import load_dotenv
+
+# ========== MENSAJES DE ÁNIMO ==========
+MENSAJES_ANIMO = [
+    "¡Vamos, mi Tiburón! 🦈 A seguir dominando el mercado.",
+    "Con esta jugada, un pasito más cerca de la libertad financiera. 🚀",
+    "El bot trabaja, tú relájate. El mercado nunca duerme. 🌙",
+    "¡Excelente compra! El RSI bajo es nuestra oportunidad. 📈",
+    "Recuerda: paciencia y disciplina. El bot sigue tu plan. 🧘",
+    "Esto es solo el comienzo. Prepárate para surfear la ola. 🌊",
+    "Un movimiento más en nuestra bitácora. ¡Vamos por más! 💪",
+    "El bot está más afilado que nunca. ¡Acierto seguro! 🎯",
+    "Mercado en movimiento, nosotros en control. 😎",
+    "Sigue así, mi rey. Estamos construyendo un imperio. 👑"
+]
+
+def obtener_mensaje_animo():
+    return random.choice(MENSAJES_ANIMO)
 
 # ========== CONFIGURACIÓN TELEGRAM ==========
-TELEGRAM_TOKEN = "8418325481:AAFnfV87o167nAMltPr1n1MvWblw4YofaZ8"
-TELEGRAM_CHAT_ID = "5326893982"
+load_dotenv()
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def enviar_telegram(mensaje):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
         requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": mensaje}, timeout=5)
+        print(f"📱 Mensaje enviado a Telegram")
     except Exception as e:
         print(f"⚠️ Error Telegram: {e}")
 
-# ========== CONFIGURACIÓN DE AUTOMATIZACIÓN ==========
-AUTO_COMPRAR = True   # True = compra solo, False = solo alerta
-AUTO_VENDER = True    # True = vende solo, False = solo alerta
-
-REGLAS_AUTO = {
-    "META": {
-        "compra_rsi_min": 25,
-        "venta_rsi_max": 75,
-        "cantidad_max_compra": 3000,     # Bajado de 5000 a 3000
-        "cantidad_min_venta": 0.5,
-        "compras_dia_max": 1
-    },
-    "BTC": {
-        "compra_rsi_min": 28,            # Bajado de 30 a 28 (más estricto)
-        "venta_rsi_max": 72,             # Subido de 70 a 72 (deja correr más)
-        "cantidad_max_compra": 5000,     # Bajado de 10000 a 5000
-        "cantidad_min_venta": 0.3,
-        "compras_dia_max": 1
-    }
-}
-
-# Archivo para control de compras diarias
-ARCHIVO_COMPRAS = "compras_hoy.json"
-
-def verificar_limite_compras(activo):
-    """Verifica si ya se compró hoy este activo"""
-    hoy = datetime.now().strftime("%Y-%m-%d")
-    if os.path.exists(ARCHIVO_COMPRAS):
-        with open(ARCHIVO_COMPRAS, "r") as f:
-            data = json.load(f)
-        if data.get("fecha") == hoy:
-            compras_hoy = data.get("compras", {}).get(activo, 0)
-            limite = REGLAS_AUTO.get(activo, {}).get("compras_dia_max", 2)
-            return compras_hoy < limite
-    return True
-
-def registrar_compra(activo):
-    """Registra una compra para controlar límite diario"""
-    hoy = datetime.now().strftime("%Y-%m-%d")
-    data = {"fecha": hoy, "compras": {}}
-    if os.path.exists(ARCHIVO_COMPRAS):
-        with open(ARCHIVO_COMPRAS, "r") as f:
-            data = json.load(f)
-        if data.get("fecha") != hoy:
-            data = {"fecha": hoy, "compras": {}}
-    data["compras"][activo] = data["compras"].get(activo, 0) + 1
-    with open(ARCHIVO_COMPRAS, "w") as f:
-        json.dump(data, f, indent=4)
-
-# ========== TU PORTAFOLIO REAL (se actualiza automáticamente) ==========
-PORTAFOLIO_REAL = {
-    "BTC": {
-        "cantidad": 0.263796,
-        "precio_entrada": 75815.99,
-        "valor": 20488.85
-    },
-    "META": {
-        "cantidad": 14.94192,
-        "precio_entrada": 669.04702,
-        "valor": 9936.83
-    }
-}
-
-EFECTIVO_DISPONIBLE = 59911.00
-
-# ========== CONFIGURACIÓN CARTERA ==========
+# ========== CONFIGURACIÓN DE LA CARTERA ==========
 CARTERA = {
-    "NVDA": "NVIDIA",
-    "AVGO": "Broadcom",
-    "MU": "Micron Technology",
-    "ANET": "Arista Networks",
-    "MRVL": "Marvell Technology",
-    "MSFT": "Microsoft",
-    "AMZN": "Amazon",
-    "LLY": "Eli Lilly",
-    "V": "Visa",
-    "META": "Meta Platforms"
+    "NVDA": {"nombre": "NVIDIA", "max_compra_usd": 2500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "AVGO": {"nombre": "Broadcom", "max_compra_usd": 2000, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "MU":   {"nombre": "Micron", "max_compra_usd": 1500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "ANET": {"nombre": "Arista Networks", "max_compra_usd": 1500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "MRVL": {"nombre": "Marvell", "max_compra_usd": 1500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "MSFT": {"nombre": "Microsoft", "max_compra_usd": 2500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "AMZN": {"nombre": "Amazon", "max_compra_usd": 2500, "compra_rsi_min": 30, "venta_rsi_max": 70, "venta_fraccion": 1.0},
+    "LLY":  {"nombre": "Eli Lilly", "max_compra_usd": 2500, "compra_rsi_min": 25, "venta_rsi_max": 75, "venta_fraccion": 1.0},
+    "V":    {"nombre": "Visa", "max_compra_usd": 2000, "compra_rsi_min": 25, "venta_rsi_max": 75, "venta_fraccion": 1.0},
+    "META": {"nombre": "Meta", "max_compra_usd": 3000, "compra_rsi_min": 22, "venta_rsi_max": 78, "venta_fraccion": 1.0},
+    "BTC":  {"nombre": "Bitcoin", "max_compra_usd": 5000, "compra_rsi_min": 25, "venta_rsi_max": 75, "venta_fraccion": 1.0},
 }
 
-# ========== FUNCIONES ==========
+# Capital inicial
+EFECTIVO = 59911.00
+POSICIONES = {ticker: 0.0 for ticker in CARTERA}
+ARCHIVO_ESTADO = "simulacion_estado.json"
+
+# Cargar estado guardado
+if os.path.exists(ARCHIVO_ESTADO):
+    with open(ARCHIVO_ESTADO, "r") as f:
+        data = json.load(f)
+        EFECTIVO = data.get("efectivo", EFECTIVO)
+        POSICIONES.update(data.get("posiciones", {}))
+
+# ========== FUNCIONES PRINCIPALES ==========
 def calcular_rsi(precios, periodo=14):
+    """Calcula RSI más preciso con manejo de errores"""
     if len(precios) < periodo + 1:
-        return 50
-    ganancias, perdidas = [], []
+        return 50.0
+    
+    ganancias = []
+    perdidas = []
+    
     for i in range(1, len(precios)):
         cambio = precios[i] - precios[i-1]
         if cambio >= 0:
@@ -108,218 +84,259 @@ def calcular_rsi(precios, periodo=14):
         else:
             ganancias.append(0)
             perdidas.append(abs(cambio))
-    ganancia_promedio = sum(ganancias[-periodo:]) / periodo
-    perdida_promedio = sum(perdidas[-periodo:]) / periodo
-    if perdida_promedio == 0:
-        return 100
-    rs = ganancia_promedio / perdida_promedio
-    return 100 - (100 / (1 + rs))
+    
+    # Promedios con manejo de casos extremos
+    ganancia_prom = sum(ganancias[-periodo:]) / periodo
+    perdida_prom = sum(perdidas[-periodo:]) / periodo
+    
+    if perdida_prom == 0:
+        return 100.0 if ganancia_prom > 0 else 50.0
+    
+    rs = ganancia_prom / perdida_prom
+    rsi = 100 - (100 / (1 + rs))
+    return round(rsi, 1)
 
 def obtener_precio_rsi(ticker):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-    headers = {"User-Agent": "Mozilla/5.0"}
-    respuesta = requests.get(url, headers=headers, timeout=10)
-    datos = respuesta.json()
-    precio = datos['chart']['result'][0]['meta']['regularMarketPrice']
-    precios = []
-    for candle in datos['chart']['result'][0]['indicators']['quote'][0]['close']:
-        if candle is not None:
-            precios.append(candle)
-    return precio, calcular_rsi(precios, 14)
+    """Obtiene precio y RSI con reintentos y manejo de errores"""
+    max_intentos = 3
+    for intento in range(max_intentos):
+        try:
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+            headers = {"User-Agent": "Mozilla/5.0"}
+            resp = requests.get(url, headers=headers, timeout=15)
+            resp.raise_for_status()
+            
+            datos = resp.json()
+            precio = datos['chart']['result'][0]['meta']['regularMarketPrice']
+            
+            # Extraer precios históricos (manejo de None)
+            precios_historicos = []
+            for candle in datos['chart']['result'][0]['indicators']['quote'][0]['close']:
+                if candle is not None:
+                    precios_historicos.append(candle)
+            
+            if len(precios_historicos) < 15:
+                # Si no hay suficientes datos, usar precio actual
+                precios_historicos = [precio] * 15
+            
+            rsi = calcular_rsi(precios_historicos)
+            return precio, rsi
+            
+        except Exception as e:
+            print(f"⚠️ Intento {intento+1} fallido para {ticker}: {e}")
+            if intento < max_intentos - 1:
+                time.sleep(2)
+            else:
+                print(f"❌ {ticker}: No se pudo obtener datos después de {max_intentos} intentos")
+                raise
+    
+    return None, None
 
-def guardar_simulacion(activo, accion, precio, rsi):
-    archivo = "historial_simulado.json"
-    datos = []
-    if os.path.exists(archivo):
-        with open(archivo, "r") as f:
-            datos = json.load(f)
-    datos.append({
-        "fecha": datetime.now().isoformat(),
-        "activo": activo,
-        "accion": accion,
-        "precio": precio,
-        "rsi": rsi
-    })
-    with open(archivo, "w") as f:
-        json.dump(datos, f, indent=4)
-
-def guardar_orden_simulada(activo, accion, precio, rsi, recomendacion=""):
-    archivo = "ordenes_simuladas.json"
-    datos = []
-    if os.path.exists(archivo):
-        with open(archivo, "r") as f:
-            datos = json.load(f)
-    nueva_orden = {
-        "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "activo": activo,
-        "accion": accion,
-        "precio": precio,
-        "rsi": rsi,
-        "recomendacion": recomendacion
-    }
-    datos.append(nueva_orden)
-    with open(archivo, "w") as f:
-        json.dump(datos, f, indent=4)
-    print(f"   📝 Orden simulada guardada: {accion} {activo} a ${precio:.2f}")
-
-def guardar_en_excel(activo, accion, precio, rsi, cantidad, total):
-    archivo = "mis_operaciones.csv"
-    archivo_existe = os.path.exists(archivo)
-    with open(archivo, "a", newline='', encoding='utf-8') as f:
-        if not archivo_existe:
-            f.write("Fecha,Activo,Acción,Precio,RSI,Cantidad,Total,Saldo Efectivo\n")
-        f.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')},{activo},{accion},{precio},{rsi},{cantidad},{total},{EFECTIVO_DISPONIBLE}\n")
-    print(f"   📊 Operación guardada en mis_operaciones.csv")
-
-def guardar_saldo_actual(activo, precio_actual, rsi):
-    archivo = "saldo_portafolio.json"
-    datos = {}
-    if os.path.exists(archivo):
-        with open(archivo, "r") as f:
-            datos = json.load(f)
-    datos["fecha_actualizacion"] = datetime.now().isoformat()
-    datos["efectivo"] = EFECTIVO_DISPONIBLE
-    datos["portafolio"] = PORTAFOLIO_REAL.copy()
-    if activo == "BTC-USD" and "BTC" in PORTAFOLIO_REAL:
-        datos["portafolio"]["BTC"]["valor_actual"] = precio_actual * PORTAFOLIO_REAL["BTC"]["cantidad"]
-        datos["portafolio"]["BTC"]["rsi_actual"] = rsi
-    elif activo == "META" and "META" in PORTAFOLIO_REAL:
-        datos["portafolio"]["META"]["valor_actual"] = precio_actual * PORTAFOLIO_REAL["META"]["cantidad"]
-        datos["portafolio"]["META"]["rsi_actual"] = rsi
-    with open(archivo, "w") as f:
-        json.dump(datos, f, indent=4)
-    print(f"   💾 Saldo guardado en saldo_portafolio.json")
-
-def ejecutar_orden_automatica(activo, accion, precio, rsi, cantidad):
-    global EFECTIVO_DISPONIBLE, PORTAFOLIO_REAL
-    archivo_ordenes = "ordenes_automaticas.json"
-    datos = []
-    if os.path.exists(archivo_ordenes):
-        with open(archivo_ordenes, "r") as f:
-            datos = json.load(f)
+def registrar_orden(ticker, accion, precio, cantidad, rsi, total, efectivo_restante):
+    """Registra orden en archivo JSON con más detalles"""
     orden = {
-        "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "activo": activo,
+        "fecha": datetime.now().isoformat(),
+        "ticker": ticker,
         "accion": accion,
         "precio": precio,
-        "rsi": rsi,
         "cantidad": cantidad,
-        "total": precio * cantidad
+        "total": total,
+        "rsi": rsi,
+        "efectivo_restante": efectivo_restante,
+        "timestamp_unix": time.time()
     }
+    archivo = "ordenes_simuladas.json"
+    historial = []
+    if os.path.exists(archivo):
+        with open(archivo, "r") as f:
+            historial = json.load(f)
+    historial.append(orden)
+    with open(archivo, "w") as f:
+        json.dump(historial, f, indent=4)
+    print(f"   📝 Orden registrada: {accion} {ticker} - ${total:.2f}")
+
+def guardar_estado():
+    """Guarda estado actual de la simulación"""
+    with open(ARCHIVO_ESTADO, "w") as f:
+        json.dump({
+            "efectivo": EFECTIVO, 
+            "posiciones": POSICIONES,
+            "ultima_actualizacion": datetime.now().isoformat()
+        }, f, indent=4)
+
+def generar_guion_youtube(ticker, accion, precio, rsi):
+    """Genera guion optimizado para YouTube Shorts"""
+    timestamp = datetime.now().strftime("%d/%m/%Y %H:%M")
     if accion == "COMPRA":
-        EFECTIVO_DISPONIBLE -= precio * cantidad
-        if activo in PORTAFOLIO_REAL:
-            PORTAFOLIO_REAL[activo]["cantidad"] += cantidad
-            PORTAFOLIO_REAL[activo]["valor"] += precio * cantidad
-        # Registrar la compra para control de límite diario
-        registrar_compra(activo)
-    elif accion == "VENTA":
-        EFECTIVO_DISPONIBLE += precio * cantidad
-        if activo in PORTAFOLIO_REAL:
-            PORTAFOLIO_REAL[activo]["cantidad"] -= cantidad
-            PORTAFOLIO_REAL[activo]["valor"] -= precio * cantidad
-    datos.append(orden)
-    with open(archivo_ordenes, "w") as f:
-        json.dump(datos, f, indent=4)
-    print(f"   🤖 ORDEN AUTOMÁTICA: {accion} {cantidad:.2f} {activo} a ${precio:.2f}")
-    print(f"   💰 Nuevo efectivo: ${EFECTIVO_DISPONIBLE:.2f}")
-    enviar_telegram(f"🤖 ORDEN AUTOMÁTICA\n{accion} {cantidad:.2f} {activo}\nPrecio: ${precio:.2f}\nRSI: {rsi:.1f}\nEfectivo: ${EFECTIVO_DISPONIBLE:.2f}")
+        guion = f"""🔥 SEÑAL DE COMPRA - {timestamp}
 
-def generar_resumen(oportunidades, recomendaciones):
-    hoy = datetime.now().strftime("%Y-%m-%d")
-    resumen = f"""
-========================================
-📅 RESUMEN DEL DÍA {hoy}
-========================================
-🔔 Señales detectadas: {len(oportunidades)}
-🎯 Recomendaciones: {len(recomendaciones)}
-💰 Efectivo disponible: ${EFECTIVO_DISPONIBLE:.2f}
-========================================
-"""
-    for rec in recomendaciones:
-        resumen += f"\n{rec}"
-    with open("resumen_dia.txt", "w", encoding="utf-8") as f:
-        f.write(resumen)
-    print("✅ Resumen guardado en resumen_dia.txt")
+{ticker} está en zona de sobreventa extrema.
+RSI: {rsi:.1f}
+Precio actual: ${precio:.2f}
 
-# ========== MENSAJE DE INICIO ==========
-enviar_telegram("🐞 Bot reiniciado con AUTOMATIZACIÓN - Socio Jhon")
+🚀 Estrategia: RSI < {CARTERA[ticker]['compra_rsi_min']}
+📈 Potencial rebote técnico.
 
-print("=== 🚀 CARTERA IA AMPLIADA (MODO AUTOMÁTICO) ===")
+#TradingBot #Compra #RSI #{ticker}"""
+    else:
+        guion = f"""⚠️ SEÑAL DE VENTA - {timestamp}
+
+{ticker} alcanzó sobrecompra.
+RSI: {rsi:.1f}
+Precio actual: ${precio:.2f}
+
+💼 Estrategia: RSI > {CARTERA[ticker]['venta_rsi_max']}
+💰 Toma de ganancias.
+
+#TradingBot #Venta #TakeProfit #{ticker}"""
+    
+    with open("guiones_youtube.txt", "a", encoding="utf-8") as f:
+        f.write(f"\n{'='*60}\n{guion}\n{'='*60}\n")
+    print(f"   📢 Guion YouTube generado")
+
+def calcular_valor_total():
+    """Calcula el valor total actual de la cartera"""
+    valor_posiciones = 0
+    detalles = []
+    for ticker, cant in POSICIONES.items():
+        if cant > 0:
+            try:
+                precio, _ = obtener_precio_rsi(ticker)
+                valor = precio * cant
+                valor_posiciones += valor
+                detalles.append(f"{ticker}: {cant:.4f}u = ${valor:.2f}")
+            except:
+                detalles.append(f"{ticker}: {cant:.4f}u (precio no disponible)")
+    return EFECTIVO + valor_posiciones, valor_posiciones, detalles
+
+# ========== EJECUCIÓN PRINCIPAL ==========
+print("="*60)
+print("=== 🚀 CARTERA IA MEJORADA (SIMULACIÓN) ===")
 print(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-print("=" * 60)
+print(f"💰 Efectivo inicial: ${EFECTIVO:.2f}")
+print("="*60)
 
-oportunidades = []
-recomendaciones = []
+# Enviar inicio
+enviar_telegram(f"🐞 Bot de 10 activos INICIADO\n💰 Efectivo: ${EFECTIVO:.2f}\n{obtener_mensaje_animo()}")
 
-# ========== MONITOREO DE ACTIVOS ==========
-for ticker, nombre in CARTERA.items():
+# Procesar cada activo
+operaciones_realizadas = []
+
+for ticker, cfg in CARTERA.items():
     try:
         precio, rsi = obtener_precio_rsi(ticker)
-        if rsi < 30:
-            decision = "🔴 COMPRAR"
-            mensaje = f"🔴 COMPRA {ticker} - {nombre}\n💰 ${precio:.2f} | RSI: {rsi:.1f}"
-            enviar_telegram(mensaje)
-            guardar_simulacion(ticker, "COMPRA", precio, rsi)
-            oportunidades.append(f"{ticker} (COMPRA RSI:{rsi:.0f})")
-            # Verificar límites antes de comprar automáticamente
-            if AUTO_COMPRAR and ticker in REGLAS_AUTO and rsi <= REGLAS_AUTO[ticker]["compra_rsi_min"]:
-                if verificar_limite_compras(ticker):
-                    cantidad = REGLAS_AUTO[ticker]["cantidad_max_compra"] / precio
-                    ejecutar_orden_automatica(ticker, "COMPRA", precio, rsi, cantidad)
-                else:
-                    print(f"   ⏸️ Límite diario alcanzado para {ticker}, no se compra")
-        elif rsi > 70:
-            decision = "🟢 VENDER"
-            mensaje = f"🟢 VENTA {ticker} - {nombre}\n💰 ${precio:.2f} | RSI: {rsi:.1f}"
-            enviar_telegram(mensaje)
-            guardar_simulacion(ticker, "VENTA", precio, rsi)
-            oportunidades.append(f"{ticker} (VENTA RSI:{rsi:.0f})")
-            if AUTO_VENDER and ticker in REGLAS_AUTO and rsi >= REGLAS_AUTO[ticker]["venta_rsi_max"] and ticker in PORTAFOLIO_REAL:
-                cantidad = PORTAFOLIO_REAL[ticker]["cantidad"] * REGLAS_AUTO[ticker]["cantidad_min_venta"]
-                if cantidad > 0:
-                    ejecutar_orden_automatica(ticker, "VENTA", precio, rsi, cantidad)
-        else:
-            decision = "🟡 ESPERAR"
-        print(f"{decision} {ticker} - {nombre}")
-        print(f"     💰 ${precio:.2f} | RSI: {rsi:.1f}")
-        if ticker == "META" and ticker in PORTAFOLIO_REAL:
-            guardar_saldo_actual(ticker, precio, rsi)
-        print("")
-    except Exception as e:
-        print(f"❌ {ticker}: Error - {e}\n")
+        
+        if precio is None:
+            print(f"❌ {ticker}: No se pudo obtener datos, saltando...")
+            continue
+        
+        accion = None
+        cantidad = 0
+        total = 0
+        
+        # Señal de COMPRA
+        if rsi < cfg["compra_rsi_min"]:
+            if EFECTIVO >= cfg["max_compra_usd"]:
+                cantidad = cfg["max_compra_usd"] / precio
+                total = cfg["max_compra_usd"]
+                EFECTIVO -= total
+                POSICIONES[ticker] += cantidad
+                
+                registrar_orden(ticker, "COMPRA", precio, cantidad, rsi, total, EFECTIVO)
+                accion = "COMPRA"
+                operaciones_realizadas.append(ticker)
+                
+                mensaje_animo = obtener_mensaje_animo()
+                mensaje = f"""🔴 COMPRA SIMULADA: {ticker}
 
-# ========== MONITOREO BTC ==========
-try:
-    precio_btc, rsi_btc = obtener_precio_rsi("BTC-USD")
-    if rsi_btc > 70:
-        recomendacion_btc = f"⚠️ BTC RSI {rsi_btc:.1f} > 70"
-        recomendaciones.append(recomendacion_btc)
-        enviar_telegram(f"🟢 VENTA BTC\n💰 ${precio_btc:.2f} | RSI: {rsi_btc:.1f}")
-        guardar_simulacion("BTC", "VENTA", precio_btc, rsi_btc)
-        if AUTO_VENDER and "BTC" in REGLAS_AUTO and rsi_btc >= REGLAS_AUTO["BTC"]["venta_rsi_max"] and "BTC" in PORTAFOLIO_REAL:
-            cantidad = PORTAFOLIO_REAL["BTC"]["cantidad"] * REGLAS_AUTO["BTC"]["cantidad_min_venta"]
-            if cantidad > 0:
-                ejecutar_orden_automatica("BTC", "VENTA", precio_btc, rsi_btc, cantidad)
-    elif rsi_btc < 30:
-        if AUTO_COMPRAR and "BTC" in REGLAS_AUTO and rsi_btc <= REGLAS_AUTO["BTC"]["compra_rsi_min"]:
-            if verificar_limite_compras("BTC"):
-                cantidad = REGLAS_AUTO["BTC"]["cantidad_max_compra"] / precio_btc
-                ejecutar_orden_automatica("BTC", "COMPRA", precio_btc, rsi_btc, cantidad)
+💰 Precio: ${precio:.2f}
+📊 RSI: {rsi:.1f}
+🔢 Cantidad: {cantidad:.6f}
+💵 Efectivo restante: ${EFECTIVO:.2f}
+
+{mensaje_animo}"""
+                
+                print(f"\n🔴 COMPRA: {ticker} a ${precio:.2f} (RSI {rsi:.1f})")
+                print(f"   Cantidad: {cantidad:.6f} | Efectivo restante: ${EFECTIVO:.2f}")
+                enviar_telegram(mensaje)
+                generar_guion_youtube(ticker, "COMPRA", precio, rsi)
             else:
-                print(f"   ⏸️ Límite diario alcanzado para BTC, no se compra")
-    print(f"🟡 BTC - Bitcoin")
-    print(f"     💰 ${precio_btc:.2f} | RSI: {rsi_btc:.1f}")
-    guardar_saldo_actual("BTC-USD", precio_btc, rsi_btc)
-    print("")
-except Exception as e:
-    print(f"❌ BTC: Error - {e}\n")
+                print(f"⚠️ {ticker}: Señal COMPRA pero fondos insuficientes (falta ${cfg['max_compra_usd'] - EFECTIVO:.2f})")
+        
+        # Señal de VENTA
+        elif rsi > cfg["venta_rsi_max"] and POSICIONES.get(ticker, 0) > 0:
+            cantidad = POSICIONES[ticker]
+            total = precio * cantidad
+            EFECTIVO += total
+            POSICIONES[ticker] = 0
+            
+            registrar_orden(ticker, "VENTA", precio, cantidad, rsi, total, EFECTIVO)
+            accion = "VENTA"
+            operaciones_realizadas.append(ticker)
+            
+            ganancia_perdida = total - (cantidad * cfg.get("precio_compra_promedio", precio))
+            mensaje_animo = obtener_mensaje_animo()
+            mensaje = f"""🟢 VENTA SIMULADA: {ticker}
 
-# ========== RESULTADO FINAL ==========
-print("=" * 60)
-if oportunidades:
-    print(f"🎯 OPORTUNIDADES: {', '.join(oportunidades)}")
+💰 Precio: ${precio:.2f}
+📊 RSI: {rsi:.1f}
+🔢 Cantidad: {cantidad:.6f}
+💵 Efectivo actual: ${EFECTIVO:.2f}
+
+{mensaje_animo}"""
+            
+            print(f"\n🟢 VENTA: {ticker} a ${precio:.2f} (RSI {rsi:.1f})")
+            print(f"   Cantidad: {cantidad:.6f} | Nuevo efectivo: ${EFECTIVO:.2f}")
+            enviar_telegram(mensaje)
+            generar_guion_youtube(ticker, "VENTA", precio, rsi)
+        
+        # Mostrar estado actual
+        estado_icono = "🟢 VENDER" if accion == "VENTA" else ("🔴 COMPRAR" if accion == "COMPRA" else "🟡 ESPERAR")
+        posicion_str = f" | 📦 {POSICIONES[ticker]:.4f}u" if POSICIONES[ticker] > 0 else ""
+        print(f"{estado_icono} {ticker} - {cfg['nombre']}: ${precio:.2f} | RSI: {rsi:.1f}{posicion_str}")
+        
+        # Pequeña pausa para no saturar la API
+        time.sleep(0.5)
+        
+    except Exception as e:
+        print(f"❌ {ticker}: Error crítico - {e}")
+        enviar_telegram(f"⚠️ Error con {ticker}: {str(e)[:100]}")
+
+# Guardar estado final
+guardar_estado()
+
+# ========== RESUMEN FINAL ==========
+print("\n" + "="*60)
+print("📊 RESUMEN DE CARTERA")
+print("="*60)
+
+# Calcular valor total
+valor_total, valor_posiciones, detalles_posiciones = calcular_valor_total()
+
+print(f"💰 Efectivo disponible: ${EFECTIVO:.2f}")
+print(f"💼 Valor en posiciones: ${valor_posiciones:.2f}")
+print(f"💎 VALOR TOTAL ESTIMADO: ${valor_total:.2f}")
+
+if detalles_posiciones:
+    print("\n📦 Posiciones abiertas:")
+    for detalle in detalles_posiciones:
+        print(f"   {detalle}")
 else:
-    print("⏳ Sin oportunidades")
-generar_resumen(oportunidades, recomendaciones)
-print(f"📊 Total activos: {len(CARTERA)} + BTC")
+    print("\n📦 No hay posiciones abiertas (efectivo 100%)")
+
+# Enviar resumen por Telegram
+resumen_telegram = f"""📈 RESUMEN DE CARTERA
+
+💰 Efectivo: ${EFECTIVO:.2f}
+💼 Posiciones: ${valor_posiciones:.2f}
+💎 TOTAL: ${valor_total:.2f}
+
+Operaciones hoy: {len(operaciones_realizadas)}
+{obtener_mensaje_animo()}"""
+
+enviar_telegram(resumen_telegram)
+
+print("\n" + "="*60)
+print("✅ Simulación completada")
+print(f"📊 Operaciones realizadas: {len(operaciones_realizadas)}")
+print("="*60)
