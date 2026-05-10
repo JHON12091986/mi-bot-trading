@@ -1,20 +1,38 @@
 {
-    "fecha_actualizacion": "2026-04-23T07:08:40.949530",
-    "efectivo": 54911.0,
+    "fecha_actualizacion": "2026-04-24T07:12:14.658493",
+    "efectivo": 59911.0,
     "portafolio": {
         "BTC": {
             "cantidad": 0.263796,
             "precio_entrada": 75815.99,
             "valor": 20488.85,
-            "valor_actual": 20537.447161919998,
-            "rsi_actual": 69.87490302560124
+            "valor_actual": 20650.130261279995,
+            "rsi_actual": 51.92632478292833
         },
         "META": {
-            "cantidad": 22.35240138487076,
+            "cantidad": 14.94192,
             "precio_entrada": 669.04702,
-            "valor": 14936.83,
-            "valor_actual": 15081.6122624,
-            "rsi_actual": 24.34626077138566
+            "valor": 9936.83,
+            "valor_actual": 9848.966568,
+            "rsi_actual": 42.68792820611792
+        }
+    },
+    "last_update": "2026-04-26T13:10:25.986333",
+    "cash": 59911.0,
+    "portfolio": {
+        "BTC": {
+            "quantity": 0.263796,
+            "entry_price": 75815.99,
+            "value": 20488.85,
+            "current_value": 20594.70408372,
+            "current_rsi": 56.26338329764454
+        },
+        "META": {
+            "quantity": 14.94192,
+            "entry_price": 669.04702,
+            "value": 9936.83,
+            "current_value": 10086.543096,
+            "current_rsi": 38.011528920457586
         }
     }
 }

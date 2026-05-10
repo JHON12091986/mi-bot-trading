@@ -1,0 +1,15 @@
+=== VIDEO TRADING ===
+IMAGEN: fondo_trading.jpg
+TEXTO:
+⚠️ SEÑAL DE VENTA - 23/04/2026 19:20
+
+BTC alcanzó sobrecompra.
+RSI: 71.8
+Precio actual: $78389.69
+
+Estrategia: RSI > 70
+Revisa tus posiciones.
+
+Nunca arriesgues más del 2% por operación.
+#TradingBot #TakeProfit
+DURACIÓN: 12 segundos

@@ -1,0 +1,42 @@
+[
+    {
+        "simbolo": "ATOMUSDT",
+        "fecha": "2026-04-27 00:05:16",
+        "lado": "COMPRA",
+        "precio": 0.0,
+        "cantidad": 151.89,
+        "total": 299.98275
+    },
+    {
+        "simbolo": "ATOMUSDT",
+        "fecha": "2026-04-27 00:55:26",
+        "lado": "COMPRA",
+        "precio": 0.0,
+        "cantidad": 153.13,
+        "total": 299.98167
+    },
+    {
+        "simbolo": "ATOMUSDT",
+        "fecha": "2026-04-27 01:00:38",
+        "lado": "COMPRA",
+        "precio": 0.0,
+        "cantidad": 153.13,
+        "total": 299.98167
+    },
+    {
+        "simbolo": "ATOMUSDT",
+        "fecha": "2026-04-27 01:05:49",
+        "lado": "COMPRA",
+        "precio": 0.0,
+        "cantidad": 153.21,
+        "total": 299.98518
+    },
+    {
+        "simbolo": "ATOMUSDT",
+        "fecha": "2026-04-27 01:11:01",
+        "lado": "COMPRA",
+        "precio": 0.0,
+        "cantidad": 153.29,
+        "total": 299.98853
+    }
+]

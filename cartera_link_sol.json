@@ -1,0 +1,9 @@
+{
+  "cash": 10.0,
+  "positions": {
+    "LINKUSDT": {
+      "qty": 1.09,
+      "avg_price": 9.11
+    }
+  }
+}

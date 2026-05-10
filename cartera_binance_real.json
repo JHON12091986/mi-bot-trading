@@ -1,0 +1,13 @@
+{
+  "cash": 10.855426000000001,
+  "positions": {
+    "BTCUSDT": {
+      "qty": 6e-05,
+      "avg_price": 75645.78
+    },
+    "BNBUSDT": {
+      "qty": 0.008,
+      "avg_price": 613.46
+    }
+  }
+}

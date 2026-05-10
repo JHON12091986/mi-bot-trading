@@ -46,5 +46,272 @@
         "precio": 77753.69,
         "rsi": 70.29469405530958,
         "recomendacion": "\u26a0\ufe0f BTC RSI 70.3 > 70 \u2192 Considera vender parte (valor: $20814)"
+    },
+    {
+        "fecha": "2026-04-26T13:19:52.344634",
+        "ticker": "LLY",
+        "accion": "COMPRA",
+        "precio": 883.96,
+        "cantidad": 2.828182270690981,
+        "total": 2500,
+        "rsi": 21.290280238892166
+    },
+    {
+        "fecha": "2026-04-26T13:25:38.058617",
+        "ticker": "LLY",
+        "accion": "COMPRA",
+        "precio": 883.96,
+        "cantidad": 2.828182270690981,
+        "total": 2500,
+        "rsi": 21.290280238892166
+    },
+    {
+        "fecha": "2026-04-26T13:35:15.680261",
+        "ticker": "LLY",
+        "accion": "COMPRA",
+        "precio": 883.96,
+        "cantidad": 2.828182270690981,
+        "total": 2500,
+        "rsi": 21.290280238892166
+    },
+    {
+        "fecha": "2026-04-27T01:41:29.354443",
+        "ticker": "LLY",
+        "accion": "COMPRA",
+        "precio": 883.96,
+        "cantidad": 2.828182270690981,
+        "total": 2500,
+        "rsi": 21.290280238892166
+    },
+    {
+        "fecha": "2026-05-06T13:07:08.219907",
+        "ticker": "MRVL",
+        "accion": "COMPRA",
+        "precio": 168.68,
+        "cantidad": 8.892577661844912,
+        "total": 1500,
+        "rsi": 29.2,
+        "efectivo_restante": 48411.0,
+        "timestamp_unix": 1778090828.2199144
+    },
+    {
+        "fecha": "2026-05-09T13:49:50.297285",
+        "ticker": "MRVL",
+        "accion": "VENTA",
+        "precio": 170.13,
+        "cantidad": 8.892577661844912,
+        "total": 1512.894237609675,
+        "rsi": 71.1,
+        "efectivo_restante": 49923.894237609675,
+        "timestamp_unix": 1778352590.2972922
+    },
+    {
+        "fecha": "2026-05-09T13:49:53.431659",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 47423.894237609675,
+        "timestamp_unix": 1778352593.4316685
+    },
+    {
+        "fecha": "2026-05-09T13:51:16.538986",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 44923.894237609675,
+        "timestamp_unix": 1778352676.5389948
+    },
+    {
+        "fecha": "2026-05-09T14:21:36.607485",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 42423.894237609675,
+        "timestamp_unix": 1778354496.6074936
+    },
+    {
+        "fecha": "2026-05-09T14:52:03.657582",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 39923.894237609675,
+        "timestamp_unix": 1778356323.6576152
+    },
+    {
+        "fecha": "2026-05-09T15:22:27.731446",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 37423.894237609675,
+        "timestamp_unix": 1778358147.731469
+    },
+    {
+        "fecha": "2026-05-09T15:52:52.876139",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 34923.894237609675,
+        "timestamp_unix": 1778359972.8761494
+    },
+    {
+        "fecha": "2026-05-09T16:24:27.578404",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 32423.894237609675,
+        "timestamp_unix": 1778361867.5784156
+    },
+    {
+        "fecha": "2026-05-09T22:04:14.616661",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 29923.894237609675,
+        "timestamp_unix": 1778382254.6166923
+    },
+    {
+        "fecha": "2026-05-09T22:34:46.582674",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 27423.894237609675,
+        "timestamp_unix": 1778384086.5827026
+    },
+    {
+        "fecha": "2026-05-09T23:05:15.829241",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 24923.894237609675,
+        "timestamp_unix": 1778385915.8292742
+    },
+    {
+        "fecha": "2026-05-09T23:36:45.781356",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 22423.894237609675,
+        "timestamp_unix": 1778387805.7815108
+    },
+    {
+        "fecha": "2026-05-10T00:08:23.034336",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 19923.894237609675,
+        "timestamp_unix": 1778389703.034345
+    },
+    {
+        "fecha": "2026-05-10T00:38:49.828816",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 17423.894237609675,
+        "timestamp_unix": 1778391529.8288248
+    },
+    {
+        "fecha": "2026-05-10T01:09:08.163872",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 14923.894237609675,
+        "timestamp_unix": 1778393348.1638794
+    },
+    {
+        "fecha": "2026-05-10T01:39:24.774276",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 12423.894237609675,
+        "timestamp_unix": 1778395164.7742913
+    },
+    {
+        "fecha": "2026-05-10T02:09:42.757216",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 9923.894237609675,
+        "timestamp_unix": 1778396982.757224
+    },
+    {
+        "fecha": "2026-05-10T02:40:03.075614",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 7423.894237609675,
+        "timestamp_unix": 1778398803.0756278
+    },
+    {
+        "fecha": "2026-05-10T03:10:25.955556",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 4923.894237609675,
+        "timestamp_unix": 1778400625.9555717
+    },
+    {
+        "fecha": "2026-05-10T03:40:49.604090",
+        "ticker": "AMZN",
+        "accion": "COMPRA",
+        "precio": 272.68,
+        "cantidad": 9.168255831010708,
+        "total": 2500,
+        "rsi": 29.8,
+        "efectivo_restante": 2423.8942376096747,
+        "timestamp_unix": 1778402449.6041007
     }
 ]

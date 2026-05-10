@@ -1,0 +1,100 @@
+1: En el huerto encantado, Ana la Manzana amanece preocupada.
+2: Una extraña niebla cubre los árboles. Algo no va bien.
+3: Mando la Mandarina aparece rodando, sin poder respirar.
+4: "¡El Duende Podrido ha envenenado el agua!", grita Ana.
+5: Juntos deciden buscar la Fuente de la Luz.
+6: En el camino, encuentran a Lalo el Limón, temblando de frío.
+7: Lalo les entrega un mapa dibujado en una hoja seca.
+8: La primera parada es el Bosque de las Raíces Retorcidas.
+9: Allí, una voz ronca les advierte: "Solo pasarán los valientes".
+10: Mando, sin pensarlo, rueda cuesta abajo y activa un portal.
+11: Al otro lado, todo es color dorado. Es el Valle de las Vitaminas.
+12: Una fresa anciana llamada Doña Frutilla les sonríe.
+13: "Para la Fuente, necesitan el Polen de la Abeja Real".
+14: La abeja vive en el Colmenar de los Zumbidos Eternos.
+15: Ana usa su dulce aroma para atraerla.
+16: La abeja les da una gota de miel mágica en un tarro.
+17: De vuelta al valle, Doña Frutilla les revela un secreto.
+18: "El Duende Podrido fue una fruta buena, corrompida por la tristeza".
+19: Mando propone ayudarlo en lugar de destruirlo.
+20: Siguen el rastro del Duende hasta un pantano gris.
+21: Allí, el Duende llora porque nadie lo recuerda.
+22: Ana le ofrece la miel mágica. El Duende la prueba.
+23: Poco a poco, su piel gris se vuelve verde brillante.
+24: "¡Soy Kiwi, el guardián olvidado!", exclama emocionado.
+25: Kiwi les agradece y restaura el agua del huerto.
+26: Todo vuelve a florecer. Hay una gran celebración.
+27: El ajo viejo, Don Bulbo, les pide que vigilen el huerto.
+28: Ana y Mando son nombrados guardianes honorarios.
+29: A la semana, un pájaro gigante se roba todas las cerezas.
+30: Las cerezas rebeldes, lideradas por Cira, se niegan a volver.
+31: "Preferimos viajar que quedarnos en el árbol", dicen.
+32: Mando les ofrece construirles un huerto móvil.
+33: Usan cáscaras de nuez como pequeñas carretas.
+34: El pájaro, conmovido, ayuda a transportar las carretas.
+35: Crean el primer "Huerto Itinerante" sobre la nube.
+36: Una tormenta de granizo amenaza con destruirlo todo.
+37: Los arándanos, pequeños pero duros, forman un escudo.
+38: La granizada no puede con el muro de arándanos.
+39: Cira propone enviar una comisión a dialogar con la tormenta.
+40: Descubren que la tormenta es un espíritu melancólico.
+41: Ana le cuenta historias felices del huerto.
+42: El espíritu se calma y se convierte en brisa suave.
+43: A cambio, les deja semillas de nubes para regar.
+44: Plantan las semillas y crecen plantas algodonosas.
+45: De las plantas nacen pequeños copos de lluvia dulce.
+46: El huerto ahora tiene su propio clima controlado.
+47: Un conejo hambriento se cuela cada noche a comer lechugas.
+48: Las lechugas, asustadas, piden medidas extremas.
+49: Mando propone plantar una lechuga gigante solo para el conejo.
+50: El conejo acepta el trato y se convierte en jardinero.
+51 Ahora cuida las malas hierbas a cambio de su lechuga gigante.
+52 Llega una carta: el huerto ha sido nominado al "Jardín Estelar".
+53 Para ganar, deben resolver el acertijo de la Vía Láctea.
+54 El acertijo lo escribe un membrillo sabio de otro sistema.
+55 "Lo que se planta en tierra firme, crece más alto que las estrellas". 
+56 Ana entiende: es la amistad lo que trasciende.
+57 El membrillo les otorga un rastrillo dorado.
+58 El rastrillo puede ordenar el caos en segundos.
+59 Unas hormigas invasoras empiezan a talar los tallos.
+60 Las hormigas, lideradas por la Reina Hormiga, quieren el valle.
+61 Kiwi negocia: pueden quedarse con una zona de maleza.
+62 La Reina acepta y ayudan a airear la tierra.
+63 El huerto crece más sano con las hormigas.
+64 Un concurso de talentos frutales anima las tardes.
+65 El coco boxeador, Rocky Coco, reta a cualquiera.
+66 Mando lo vence con un baile sorpresa, no con violencia.
+67 El durazno melódico entona una canción que hace llorar de alegría.
+68 Hasta el Duende Kiwi se anima a contar chistes verdes.
+69 La fama del huerto llega a otros mundos.
+70 Un ser de luz, el Frutángel, les pide ayuda: su jardín se apaga.
+71 La causa es una máquina que succiona alegría en otro reino.
+72 Ana, Mando y Kiwi viajan en un cometa al Reino Tristón.
+73 Allí, los habitantes no conocen la risa, solo reglas grises.
+74 El Rey Tristón es un pomelo amargado por una vieja derrota.
+75 Mando le enseña a rodar y reírse de sí mismo.
+76 El Rey, conmovido, abraza la alegría y derrite la máquina.
+77 El jardín del Frutángel renace lleno de luciérnagas.
+78 Como regalo, les da un puñado de estrellas fugaces.
+79 Cada estrella concede un deseo relacionado con el huerto.
+80 Ana desea que nunca falte el agua.
+81 Mando desea que nunca falte la diversión.
+82 Kiwi desea poder recordar siempre a sus amigos.
+83 Los deseos se cumplen al instante.
+84 El huerto se convierte en un sitio legendario.
+85 Una plaga de pulgones robots ataca las hojas.
+86 Son máquinas del Reino Tristón descontentas.
+87 Usan el rastrillo dorado para desprogramarlas.
+88 Los pulgones se vuelven ayudantes de cosecha.
+89 El huerto ahora tiene su propia fuerza de defensa dulce.
+90 Un circo ambulante de frutas acrobáticas llega al valle.
+91 La Pera Trapecista se enamora de un plátano forzudo.
+92 La boda frutal es la fiesta más grande jamás vista.
+93 El pastel de bodas es una enorme sandía multicolor.
+94 De la fiesta nace una nueva fruta: la sandiplátano.
+95 Todos viven en armonía, aprendiendo unos de otros.
+96 Una profecía dice que cada 100 lunas algo mágico ocurrirá.
+97 Se acerca la luna centesimal. El huerto vibra.
+98 Un árbol nuevo brota del centro: es el Árbol de los Deseos.
+99 Cada quien puede pedir un deseo, pero solo uno.
+100 Ana pide que la historia nunca termine y todos aplauden. Fin (por ahora).

@@ -1,0 +1,45 @@
+{
+    "efectivo": 200.0,
+    "posiciones": {
+        "BTCUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        },
+        "ETHUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        },
+        "BNBUSDT": {
+            "cantidad": 5.588,
+            "precio_medio": 625.9584609878311
+        },
+        "SOLUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        },
+        "ADAUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        },
+        "DOTUSDT": {
+            "cantidad": 3640.1099999999997,
+            "precio_medio": 1.2353994741917143
+        },
+        "LINKUSDT": {
+            "cantidad": 32.22,
+            "precio_medio": 9.3
+        },
+        "MATICUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        },
+        "ATOMUSDT": {
+            "cantidad": 764.65,
+            "precio_medio": 1.9615719610279216
+        },
+        "UNIUSDT": {
+            "cantidad": 0.0,
+            "precio_medio": 0.0
+        }
+    }
+}
