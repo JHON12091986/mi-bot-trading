@@ -9,20 +9,21 @@ load_dotenv()
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# ========== CONFIGURACIÓN CONSERVADORA ==========
+# ========== CONFIGURACIÓN EXACTA ==========
 SIMBOLO = "WIFUSDT"
-RSI_COMPRA = 25      # Más bajo = Más conservador (solo compra en sobreventa extrema)
-RSI_VENTA = 75       # Más alto = Más conservador (solo vende en sobrecompra extrema)
+RSI_COMPRA = 25      
+RSI_VENTA = 75       
 INTERVALO_SEGUNDOS = 60
-ARCHIVO_ESTADO = "bot_wif_simulado.json"
 
-# ========== FUNCIONES ==========
 def enviar_telegram(mensaje):
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        print("⚠️ No hay Telegram configurado")
+        return
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-        payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mensaje, "parse_mode": "HTML"}
-        requests.post(url, json=payload, timeout=10)
-        print(f"📱 Mensaje enviado")
+        payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mensaje}
+        requests.post(url, json=payload, timeout=5)
+        print("📱 Mensaje enviado")
     except Exception as e:
         print(f"⚠️ Error Telegram: {e}")
 
@@ -47,12 +48,10 @@ def calcular_rsi(precios, periodo=14):
 
 def obtener_datos_wif():
     try:
-        # Precio actual
         url_price = "https://api.binance.com/api/v3/ticker/price?symbol=WIFUSDT"
         precio = float(requests.get(url_price, timeout=10).json()["price"])
         
-        # Datos históricos para RSI
-        url_klines = f"https://api.binance.com/api/v3/klines?symbol=WIFUSDT&interval=1h&limit=50"
+        url_klines = "https://api.binance.com/api/v3/klines?symbol=WIFUSDT&interval=1h&limit=50"
         datos = requests.get(url_klines, timeout=10).json()
         precios_hist = [float(candle[4]) for candle in datos]
         
@@ -62,34 +61,14 @@ def obtener_datos_wif():
         print(f"❌ Error: {e}")
         return None, None
 
-def cargar_estado():
-    if os.path.exists(ARCHIVO_ESTADO):
-        with open(ARCHIVO_ESTADO, "r") as f:
-            return json.load(f)
-    return {"ultima_alerta": None, "ultimo_rsi": 50}
-
-def guardar_estado(tipo_alerta, rsi):
-    estado = {
-        "ultima_alerta": tipo_alerta,
-        "ultimo_rsi": rsi,
-        "fecha": datetime.now().isoformat()
-    }
-    with open(ARCHIVO_ESTADO, "w") as f:
-        json.dump(estado, f, indent=4)
-
-# ========== BUCLE PRINCIPAL ==========
 def ejecutar():
-    print("=" * 60)
-    print("🐕 BOT WIF - ESTRATEGIA CONSERVADORA (SIMULADO)")
-    print(f"📅 Iniciado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"🎯 Comprar manual cuando RSI ≤ {RSI_COMPRA}")
-    print(f"🎯 Vender manual cuando RSI ≥ {RSI_VENTA}")
-    print(f"⏱️  Revisando cada {INTERVALO_SEGUNDOS} segundos")
-    print("=" * 60)
+    print("🐕 BOT WIF - RSI EXACTO")
+    print(f"🎯 COMPRA cuando RSI ≤ {RSI_COMPRA}")
+    print(f"🎯 VENTA cuando RSI ≥ {RSI_VENTA}")
     
-    enviar_telegram(f"🐕 BOT CONSERVADOR INICIADO\n📊 RSI compra ≤ {RSI_COMPRA}\n📊 RSI venta ≥ {RSI_VENTA}\n✅ Solo alertas - Tú operas manual")
+    enviar_telegram(f"🐕 BOT WIF ACTIVADO\n✅ Comprar RSI ≤ {RSI_COMPRA}\n✅ Vender RSI ≥ {RSI_VENTA}")
     
-    estado = cargar_estado()
+    ultima_alerta = None
     
     while True:
         try:
@@ -101,42 +80,22 @@ def ejecutar():
             timestamp = datetime.now().strftime("%H:%M:%S")
             print(f"[{timestamp}] WIF: ${precio:.4f} | RSI: {rsi:.1f}")
             
-            # COMPRA
-            if rsi <= RSI_COMPRA:
-                if estado["ultima_alerta"] != "COMPRA":
-                    mensaje = f"""🟢 <b>ALERTA DE COMPRA MANUAL</b>
-🐕 WIF/USDT
-💰 Precio: ${precio:.4f}
-📊 RSI: {rsi:.1f}
-🎯 <b>Estrategia: RSI ≤ {RSI_COMPRA}</b>
-
-✅ Sugerencia: COMPRA AHORA
-💡 Monto sugerido: $5 - $10 USDT
-⏰ {datetime.now().strftime('%H:%M:%S')}"""
-                    enviar_telegram(mensaje)
-                    guardar_estado("COMPRA", rsi)
-                    print("🔔 Alerta de COMPRA enviada")
+            if rsi <= RSI_COMPRA and ultima_alerta != "COMPRA":
+                mensaje = f"🟢 COMPRA WIF\nPrecio: ${precio:.4f}\nRSI: {rsi:.1f} (≤{RSI_COMPRA})"
+                enviar_telegram(mensaje)
+                ultima_alerta = "COMPRA"
+                print("🔔 Alerta COMPRA enviada")
+                
+            elif rsi >= RSI_VENTA and ultima_alerta != "VENTA":
+                mensaje = f"🔴 VENTA WIF\nPrecio: ${precio:.4f}\nRSI: {rsi:.1f} (≥{RSI_VENTA})"
+                enviar_telegram(mensaje)
+                ultima_alerta = "VENTA"
+                print("🔔 Alerta VENTA enviada")
             
-            # VENTA
-            elif rsi >= RSI_VENTA:
-                if estado["ultima_alerta"] != "VENTA":
-                    mensaje = f"""🔴 <b>ALERTA DE VENTA MANUAL</b>
-🐕 WIF/USDT
-💰 Precio: ${precio:.4f}
-📊 RSI: {rsi:.1f}
-🎯 <b>Estrategia: RSI ≥ {RSI_VENTA}</b>
-
-✅ Sugerencia: VENDE AHORA
-⏰ {datetime.now().strftime('%H:%M:%S')}"""
-                    enviar_telegram(mensaje)
-                    guardar_estado("VENTA", rsi)
-                    print("🔔 Alerta de VENTA enviada")
-            
-            time.sleep(INTERVALO_SEGUNDOS)
+            time.sleep(60)
             
         except KeyboardInterrupt:
             print("\n🛑 Bot detenido")
-            enviar_telegram("🛑 BOT CONSERVADOR DETENIDO")
             break
         except Exception as e:
             print(f"❌ Error: {e}")
