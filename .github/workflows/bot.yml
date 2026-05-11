@@ -1,33 +1,32 @@
-name: Bot de Trading
+name: Bot WIF Automatico
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    # Corre cada 30 minutos
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     
-    # 🔥 SOLUCIÓN CLAVE: Forzar Node.js 24
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    
     steps:
-      - name: Checkout code
+      - name: Checkout codigo
         uses: actions/checkout@v4
       
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
-      - name: Install dependencies
+      - name: Instalar dependencias
         run: |
-          pip install requests python-dotenv
+          pip install requests python-dotenv python-binance pandas numpy
       
-      - name: Run trading bot
+      - name: Ejecutar bot WIF
         env:
+          BINANCE_API_KEY: ${{ secrets.BINANCE_API_KEY }}
+          BINANCE_API_SECRET: ${{ secrets.BINANCE_API_SECRET }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot_wif_conservador.py
