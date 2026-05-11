@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 python-binance
 pandas
 numpy
 requests
+=======
+python-binance
+pandas
+numpy
+requests
+>>>>>>> Stashed changes
 python-dotenv
