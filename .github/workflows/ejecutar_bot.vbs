@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "python C:\Users\jhons\mi_primer_bot\bot_wif_conservador.py", 0, False

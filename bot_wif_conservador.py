@@ -41,7 +41,6 @@ def enviar_telegram(mensaje):
         print(f"⚠️ Error Telegram: {e}")
 
 def calcular_rsi(precios, periodo=14):
-    """Calcula RSI a partir de lista de precios"""
     if len(precios) < periodo + 1:
         return 50.0
     ganancias, perdidas = [], []
@@ -61,13 +60,10 @@ def calcular_rsi(precios, periodo=14):
     return round(100 - (100 / (1 + rs)), 1)
 
 def obtener_datos_wif():
-    """Obtiene precio y RSI de WIF"""
     try:
-        # Precio desde Binance
         url_price = f"https://api.binance.com/api/v3/ticker/price?symbol={SIMBOLO}"
         precio = float(requests.get(url_price, timeout=5).json()["price"])
         
-        # RSI desde Binance (más estable que CoinPaprika)
         url_klines = f"https://api.binance.com/api/v3/klines?symbol={SIMBOLO}&interval=1h&limit=30"
         datos = requests.get(url_klines, timeout=10).json()
         precios_hist = [float(candle[4]) for candle in datos]
@@ -132,15 +128,17 @@ def vender_wif(precio, rsi, wif_disponible):
 
 def ejecutar():
     print("=" * 50)
-    print("🤖 BOT WIF - ENVÍA RSI CADA MINUTO")
+    print("🤖 BOT WIF - ENVÍA RSI CADA 5 MINUTOS")
     print(f"🎯 COMPRA cuando RSI ≤ {RSI_COMPRA}")
     print(f"🎯 VENTA cuando RSI ≥ {RSI_VENTA}")
     print("=" * 50)
     
-    enviar_telegram(f"🤖 BOT WIF ACTIVADO\n✅ Te enviaré el RSI cada 1 minuto\n✅ COMPRA si RSI ≤ {RSI_COMPRA}\n✅ VENTA si RSI ≥ {RSI_VENTA}")
+    enviar_telegram(f"🤖 BOT WIF ACTIVADO\n✅ Resumen cada 5 minutos\n✅ COMPRA si RSI ≤ {RSI_COMPRA}\n✅ VENTA si RSI ≥ {RSI_VENTA}")
     
     ya_compro = False
     ya_vendio = False
+    contador_envios = 0
+    contador_minutos = 0
     
     while True:
         try:
@@ -155,19 +153,14 @@ def ejecutar():
             # Mostrar en consola
             print(f"[{timestamp}] WIF: ${precio:.4f} | RSI: {rsi:.1f} | USDT: ${usdt:.2f} | WIF: {wif:.2f}")
             
-            # ===== ENVIAR RSI A TELEGRAM CADA MINUTO =====
-            mensaje_rsi = f"⏱️ {timestamp}\n🐕 WIF: ${precio:.4f}\n📊 RSI: {rsi:.1f}"
-            
-            # Agregar recomendación según RSI
-            if rsi <= RSI_COMPRA:
-                mensaje_rsi += f"\n🟢 ¡COMPRA! (RSI ≤ {RSI_COMPRA})"
-            elif rsi >= RSI_VENTA:
-                mensaje_rsi += f"\n🔴 ¡VENTA! (RSI ≥ {RSI_VENTA})"
-            else:
-                mensaje_rsi += f"\n⚪ NEUTRAL (Rango {RSI_COMPRA}-{RSI_VENTA})"
-            
-            enviar_telegram(mensaje_rsi)
-            # ============================================
+            # ===== ENVIAR RSI A TELEGRAM CADA 5 MINUTOS =====
+            contador_envios += 1
+            if contador_envios >= 5:  # 5 minutos
+                mensaje_rsi = f"📊 RESUMEN WIF - {timestamp}\n💰 ${precio:.4f}\n📊 RSI: {rsi:.1f}"
+                enviar_telegram(mensaje_rsi)
+                contador_envios = 0
+                print("📊 Resumen enviado a Telegram")
+            # ================================================
             
             # COMPRA AUTOMÁTICA
             if rsi <= RSI_COMPRA and not ya_compro and usdt > 5:
@@ -199,7 +192,6 @@ def ejecutar():
             break
         except Exception as e:
             print(f"❌ Error: {e}")
-            enviar_telegram(f"⚠️ Error: {str(e)[:100]}")
             time.sleep(60)
 
 if __name__ == "__main__":

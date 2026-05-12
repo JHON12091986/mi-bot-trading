@@ -2,33 +2,30 @@ name: Bot WIF Automatico
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.10'
       
       - name: Instalar dependencias
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install requests python-dotenv python-binance
       
-      - name: Ejecutar bot WIF
+      - name: Ejecutar bot
         run: python bot_wif_conservador.py
         env:
-          BINANCE_API_KEY: ${{ secrets.BINANCE_API_KEY }}
-          BINANCE_API_SECRET: ${{ secrets.BINANCE_API_SECRET }}
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BINANCE_API_KEY=iFUsjEoWVYg43fRHpmZDd5Qgwb8jTdSIGOZvWXqxsstB4LAZiaXsOiXQKZSjWTAA
+          BINANCE_API_SECRET=7pcSCbgPz4G8rwOI6UTDDopmeMRbBzlSSpPFiwZHyOSdbMbK1CfUsVocZdHhdeLQ
+          TELEGRAM_TOKEN=8418325481:AAFnfV87o167nAMltPr1n1MvWblw4YofaZ8
+          TELEGRAM_CHAT_ID=5326893982
